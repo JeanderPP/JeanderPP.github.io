@@ -1,3 +1,17 @@
-## Meu primeiro portfólio
+## Resumo
 
-Projeto template com o intuito de exibir minhas qualificações profissionais e pessoais.
+👨‍💻 Olá, meu nome é **Jeander Ptruni Pallar**, atualmente estou com 28 anos a procura de uma oportunidade para ingressar no mercado de trabalho e no mundo do desenvolvimento, seja atuando no front-end ou back-end 🚀🚀🚀.
+
+Estou cada dia mais buscando conhecimento e me aperfeiçoando nas técninas e metodologias ágeis de programação e desenvolvimento, com o intuito de estar adequado a trabalhar, para chegar na empresa, e fazer acontecer.
+
+Atualmente, estou dando seguimento nos seguintes estudos:
+
+- 🦾 HTML5
+- ✨ CSS3
+- 🧑‍🚀 JavaScript
+
+<hr/>
+
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="drawing" width="200"/>
+</p>
