@@ -49,13 +49,13 @@ Atualmente, estou dando seguimento nos seguintes estudos:
 </p>
 <h3>Contato</h3>
 
-<a href="mailto:jeander.p.p@gmail.com" target="_blank" float="left">
+<a href="mailto:jeander.p.p@gmail.com" target="_blank">
   <img src="https://i.pinimg.com/564x/ee/c9/7f/eec97f7f050b0101897a0028a5bc1106.jpg" width="40" title="Jeander">
 </a>
 
 
 <a href="tel:+55 (41) 9 98899-5887" target="_blank">
-  <img src="https://www.ilhacomprida.sp.leg.br/imagens/sitecmic/telefone.png" width="40" +55 (41) 9 8899-5887" float="left">
+  <img src="https://www.ilhacomprida.sp.leg.br/imagens/sitecmic/telefone.png" width="40" title="+55 (41) 9 8899-5887">
 </a>
      
 
