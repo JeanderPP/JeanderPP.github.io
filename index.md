@@ -48,14 +48,18 @@ Atualmente, estou dando seguimento nos seguintes estudos:
   Toda inovação precisa de persistencia e resiliencia. Estou preparado para crescer!
 </p>
 <h3>Contato</h3>
-
+<div align="center">
 <a href="mailto:jeander.p.p@gmail.com" target="_blank">
-  <img src="https://i.pinimg.com/564x/ee/c9/7f/eec97f7f050b0101897a0028a5bc1106.jpg" width="40" title="Jeander">
+  <img src="https://i.pinimg.com/564x/ee/c9/7f/eec97f7f050b0101897a0028a5bc1106.jpg" width="40" title="Jeander" hspace="12">
 </a>
 
 
 <a href="tel:+55 (41) 9 98899-5887" target="_blank">
   <img src="https://www.ilhacomprida.sp.leg.br/imagens/sitecmic/telefone.png" width="40" title="+55 (41) 9 8899-5887">
 </a>
-     
+    
+<a href="https://wa.me/message/V56OGQEXAG5BA1" target="_blank">
+  <img src="https://i.pinimg.com/originals/68/51/2b/68512b9e63c14816b1b2828968066205.png" width="60" title="WhatsApp">
+<a>
 
+  </div>
