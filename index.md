@@ -58,4 +58,4 @@ Atualmente, estou dando seguimento nos seguintes estudos:
       <a href="https://wa.me/message/V56OGQEXAG5BA1" target="_blank">
     <img src="https://i.pinimg.com/originals/68/51/2b/68512b9e63c14816b1b2828968066205.png" width="60" title="WhatsApp">
   <a>
-</p>
+
