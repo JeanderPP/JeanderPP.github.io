@@ -48,3 +48,6 @@ Atualmente, estou dando seguimento nos seguintes estudos:
   Toda inovação precisa de persistencia e resiliencia. Estou preparado para crescer!
 </p>
 
+<a href="tel:+55 (41) 9 8899-5887" target="_blank">
+							<img src="img/telefone.png" title="+55 (41) 9 8899-5887"/>
+						</a>
