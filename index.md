@@ -62,4 +62,4 @@ Atualmente, estou dando seguimento nos seguintes estudos:
   <img src="https://i.pinimg.com/originals/68/51/2b/68512b9e63c14816b1b2828968066205.png" width="60" title="WhatsApp">
 <a>
 
-  </div>
+
