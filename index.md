@@ -50,7 +50,7 @@ Atualmente, estou dando seguimento nos seguintes estudos:
 <h3>Contato</h3>
 <div align="center">
 <a href="mailto:jeander.p.p@gmail.com" target="_blank">
-  <img src="https://i.pinimg.com/564x/ee/c9/7f/eec97f7f050b0101897a0028a5bc1106.jpg" width="40" title="Jeander" hspace="12">
+  <img src="https://i.pinimg.com/564x/ee/c9/7f/eec97f7f050b0101897a0028a5bc1106.jpg" width="40" title="Jeander" hspace="10">
 </a>
 
 
