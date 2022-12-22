@@ -1,0 +1,53 @@
+(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    var ps = gs.getProperty('autoClose.for.sc.task.awaiting.caller');
+    var pn = parseInt(ps);
+
+    if (pn > 0) {
+        var sched = new GlideSchedule();
+        sched.load(gs.getProperty("schedule_break_lunch"));
+
+        var actualDateTime = new GlideDateTime();
+        actualDateTime.setDisplayValue(gs.nowDateTime());
+        var gr = new GlideRecord('sc_task');
+        gr.addEncodedQuery('state=5^active=true^u_awaiting_callerISNOTEMPTY^request_itemISNOTEMPTY');
+        gr.query();
+
+        while (gr.next()) {
+			
+            var awaiting_caller_duration = new GlideDuration(pn * 60 * 60 * 1000).getNumericValue(); // duração em horas da property convertida para ms
+
+            var dif = sched.duration(gr.u_awaiting_caller.getGlideObject(), actualDateTime).getNumericValue(); // diferenca de duracao convertida para ms
+            if (dif >= awaiting_caller_duration) {
+					
+				var workflow = new Workflow();
+				//cancel all the workflows
+				workflow.cancel(gr.request_item.getRefRecord());
+				
+                var parentScTask = gr.getValue('request_item');
+
+                gr.setValue('state', 3);
+                gr.setValue('active', false);
+                gr.comments = 'Solicitação encerrada automaticamente devido à falta de retorno em 2 dias úteis pelo solicitante.';
+                gr.update();
+
+                var grRitm = new GlideRecord('sc_req_item');
+                grRitm.addQuery('sys_id', parentScTask);
+                grRitm.addQuery('active', true);
+                grRitm.query();
+
+                if (grRitm.next()) {              
+                    grRitm.setValue('state', 3);
+                    grRitm.setValue('stage', 4);
+                    grRitm.setValue('active', false);
+                    grRitm.comments = 'Solicitação encerrada automaticamente devido à falta de retorno em 2 dias úteis pelo solicitante.';
+                    grRitm.update();
+                }
+
+            }
+
+        }
+    }
+
+})(current, previous);
