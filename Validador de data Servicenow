@@ -1,0 +1,20 @@
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    var empresaContratante = g_form.getValue('empresa_solicitante_do_material_temp');
+
+    if (empresaContratante == 'eqtl_goias') {
+        var arrDate = newValue.split('/');
+
+        //To change the date range from 1 hour, change var minutes_from_now to desired amount time
+        var minutes_from_now = 21600; //15 dias em minutos
+        var date_obj = new Date(arrDate[2] + '-' + arrDate[1] + '-' + arrDate[0] + 'T00:00:00');
+        var future_date = new Date(new Date().getTime() + minutes_from_now * 60000);
+        if (future_date > date_obj) {
+            g_form.clearValue('data_disponivel_inspecao_1');
+            g_form.showFieldMsg('data_disponivel_inspecao_1', 'Conforme previsto no instrumento contratual, a convocação de inspeção deve respeitar uma antecedência mínima de 15 dias da data de abertura.', 'error');
+        }
+    }
+}
