@@ -1,5 +1,5 @@
 function onChange(control, oldValue, newValue, isLoading) {
-    if (isLoading  newValue == '') { 
+    if (isLoading || newValue == '') { 
         return; 
     }
 
@@ -8,7 +8,7 @@ function onChange(control, oldValue, newValue, isLoading) {
     var valor =newValue;
     var novoValor = newValue.replace(/./g, '').replace(/,/g, '.');
     var valor2 = parseFloat(novoValor);
-    if (valor2 == 'NaN'  valor2 < 1) {
+    if (valor2 == 'NaN' || valor2 < 1) {
         g_form.clearValue('u_money');
         getMessage('Financial Entries Total Value', function(msg){
             g_form.showFieldMsg('u_money', msg, 'error');
