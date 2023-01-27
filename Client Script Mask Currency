@@ -1,0 +1,33 @@
+function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading  newValue == '') { 
+        return; 
+    }
+
+
+
+    var valor =newValue;
+    var novoValor = newValue.replace(/./g, '').replace(/,/g, '.');
+    var valor2 = parseFloat(novoValor);
+    if (valor2 == 'NaN'  valor2 < 1) {
+        g_form.clearValue('u_money');
+        getMessage('Financial Entries Total Value', function(msg){
+            g_form.showFieldMsg('u_money', msg, 'error');
+        });
+        return;
+    }
+    if (valor.length == 1) {
+        valor = parseFloat(valor).toFixed(2);
+    }
+
+    valor = valor.replace(/\D/g, ""); // permite digitar apenas numero
+    valor = valor.replace(/(\d{1})(\d{26})$/, "$1.$2"); // coloca ponto antes dos ultimos digitos
+    valor = valor.replace(/(\d{1})(\d{23})$/, "$1.$2"); // coloca ponto antes dos ultimos digitos
+    valor = valor.replace(/(\d{1})(\d{20})$/, "$1.$2"); // coloca ponto antes dos ultimos digitos
+    valor = valor.replace(/(\d{1})(\d{17})$/, "$1.$2"); // coloca ponto antes dos ultimos digitos
+    valor = valor.replace(/(\d{1})(\d{14})$/, "$1.$2"); // coloca ponto antes dos ultimos digitos
+    valor = valor.replace(/(\d{1})(\d{11})$/, "$1.$2"); // coloca ponto antes dos ultimos 11 digitos
+    valor = valor.replace(/(\d{1})(\d{8})$/, "$1.$2"); // coloca ponto antes dos ultimos 8 digitos
+    valor = valor.replace(/(\d{1})(\d{5})$/, "$1.$2"); // coloca ponto antes dos ultimos 5 digitos
+    valor = valor.replace(/(\d{1})(\d{1,2})$/, "$1,$2"); // coloca virgula antes dos ultimos 2 digitos
+    g_form.setValue('u_money', valor);
+}
